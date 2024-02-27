@@ -6,7 +6,7 @@ RUN echo "download tools and code..." && \
     apt-get -qq -y install git python3 make curl wget g++ gnupg
 RUN mkdir -p /usr/include/nlohmann/ && \
     cd /usr/include/nlohmann/ && \
-    wget https://github.com/nlohmann/json/releases/download/v3.10.5/json.hpp
+    wget https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp
 RUN cd /opt && \
     git clone -v https://github.com/zerotier/ZeroTierOne.git --depth 1
 
